@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap实例</title>
+    <link href="css/bootstrap.min.css"rel="stylesheet" >
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css"rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img  alt="hupu" src="img/1.png" style="width: 75px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-scrollyspy" id="myScroll">
+                <ul class="nav navbar-nav">
+                    <li><a class="btn tooltip-top-nav " href="#page1">科比简介</a></li>
+                    <li><a class="btn tooltip-top-nav" href="#page2">巅峰时刻</a></li>
+                    <li><a class="btn tooltip-top-nav" href="#page3">职业生涯</a></li>
+                    <li><a class="btn tooltip-top-nav" href="#page4">经典战靴</a></li>
+                    <li><a class="btn tooltip-top-nav" href="#page5">篮球人生</a></li>
+                </ul>
+                <div class="nav navbar  navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Sign in</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign out</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索内容">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="side-nav" role="navigation">
+    <ul class="nav-side-nav">
+        <li><a class="tooltip-side-nav select one" href="#page1" title="科比简介"> </a></li>
+        <li><a class="tooltip-side-nav default two" href="#page2" title="巅峰时刻"> </a></li>
+        <li><a class="tooltip-side-nav default three" href="#page3"title="职业生涯"> </a></li>
+        <li><a class="tooltip-side-nav default four" href="#page4" title="经典战靴"> </a></li>
+        <li><a class="tooltip-side-nav default five" href="#page5" title="篮球人生"> </a></li>
+    </ul>
+</div>
+
+
+
+<div class="onepage" id="page1">
+    <div class="onepage-bg" id="onepagebg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="title-text">
+                <div class="col-md-12 headFontSize">
+                    <h1 class="headh1content">
+                        虎扑体育<br/>
+                        可能是最好的篮球网站
+                    </h1>
+                    <p class="bodypcontent">科比·布莱恩特（Kobe Bryant），1978年8月23日出生于<br/>美国宾夕法尼亚州费城，前美国职业篮球运动员，<br/>司职得分后卫/小前锋（锋卫摇摆人），整个NBA生涯<br/>（1996年-2016年）一直效力于NBA洛杉矶湖人队，<br>绰号“黑曼巴” 。</p>
+                    <p class="btn-store">
+                        <a class="btn btn-success btn-lg" href="https://nba.hupu.com/wiki/%E7%A7%91%E6%AF%94-%E5%B8%83%E8%8E%B1%E6%81%A9%E7%89%B9" target="_blank">更多详情，点击查看</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="twopage" id="page2">
+    <div class="twopage-text">
+        <h1 class="two-page-text-h1">
+            有一种坚持叫做科比
+            <img src="img/twopagebg1.jpg">
+        </h1>
+    </div>
+    <div class="row">
+        <div class="twopage-course col-md-4">
+            <a href="">
+                <img src="img/twopage-1.jpg" style="width: 100%">
+                <div class="classicon">
+                    <h3>得分记录</h3>
+                    <h1><strong>NBA历史第二高分81</strong></h1>
+                </div>
+            </a>
+        </div>
+        <div class="twopage-course  col-md-4">
+            <a href="">
+                <img src="img/twopage-2.jpg" style="width: 100%">
+                <div class="classicon">
+                    <h3>常规赛MVP</h3>
+                    <h1><strong>2007-08赛季常规赛最有价值球员</strong></h1>
+                </div>
+            </a>
+        </div>
+        <div class="twopage-course  col-md-4">
+            <a href="">
+                <img src="img/twopage-3.jpg" style="width: 100%">
+                <div class="classicon">
+                    <h3>退役</h3>
+                    <h1><strong>科比最后史诗一战60分</strong></h1>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="twopagebtn">
+        <a id="twopage-easy" href="#" class="btn btn-success btn-lg">点击查看更多</a>
+    </div>
+</div>
+
+
+<div class="threepage" id="page3">
+    <div class="threepage-bg ">
+        <div class="threepagecontent">
+            <div class="threepagetext">
+                <h1>科比名言</h1>
+                <p>“24号的意义就是24小时，我希望把自己的所有精力都投入到篮球当中，这就是我选择24号的原因。如果不能全身心认真投入，我就不是科比。24是我的最佳诠释。”</p>
+            </div>
+            <a href="#" class="btn btn-success btn-lg threepagecontentbtn">我知道每天凌晨四点洛杉矶的样子</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="fourpage" id="page4">
+    <div class="container" style="width:70%">
+        <div class="basketballtool-text">
+            <h1>科比大师之路</h1>
+            <p>科比上脚的经典战靴介绍</p>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-interwal="5000" style="height: 300px">
+            <ol class="carousel-indicators" style="margin-top: 200px">
+                <li data-target="#" data-slide="0" class="active"></li>
+                <li data-target="#" data-slide="1" ></li>
+                <li data-target="#" data-slide="2" ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="width: 500px;" >
+                    <img src="img/fourpage-1.jpg" alt="the kobe one" title="the kobe one">
+                </div>
+                <div class="item" style="width: 500px;">
+                    <img src="img/fourpage-2.jpg" alt="the kobe IV" title="the kobe IV">
+                </div>
+                <div class="item" style="width: 500px;">
+                    <img src="img/fourpage-3.jpg" alt="the kobe V" title="the kobe V">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="fivepage" id="page5">
+    <div class="fivepage-bg" id="fivepagebg">
+        <div class="container">
+            <div class="fivepagetext">
+                <h1>虎扑·篮球·科比·人生</h1>
+            </div>
+            <div class="fivepagebtncenter">
+                <div class="row">
+                    <a href="#">
+                        <div class="col-md-4">
+                            <img src="img/pagefive1.jpg" class="fivepagebtn pictureicon">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col-md-4">
+                            <img src="img/pagefive2.jpg" class="fivepagebtn pictureicon">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col-md-4">
+                            <img src="img/pagefive3.jpg" class="fivepagebtn pictureicon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="fivepagefoot">
+                <a href="http://nba.hupu.com/" target="_blank" type="button" class="btn btn-lg btn-success" style="font-size: 25px">
+                    更多详情点击登录虎扑
+                </a>
+                <p class="fivepagefoot-text">
+                    逛虎扑步行街极易上瘾，请各位注意控制时间哟^_^
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
