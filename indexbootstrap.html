@@ -30,19 +30,44 @@
                 </ul>
                 <div class="nav navbar  navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">@action</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Sign out</a></li>
+                            <li><a href="#">@about</a></li>
                         </ul>
-                    </li>
+                    </li>`
                 </div>
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="搜索内容">
                     </div>
-                    <button type="submit" class="btn btn-default">搜索</button>
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal" data-whatever="@CleverCC" >Sign</button>
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group ">
+                                        <label class="control-label ">username</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group has-success ">
+                                        <label class="control-label">password</label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
