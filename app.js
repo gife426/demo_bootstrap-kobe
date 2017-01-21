@@ -51,7 +51,7 @@ $(function () {
         }
     });
 });
-
+//模态框效果
 $(function (){
     $("#myModal").on("show.bs.modal",function (e) {
         var button=$(e.relatedTarget);
@@ -66,4 +66,40 @@ $(function (){
 
 
 });
+
+
+//ajax 提交
+$(function () {
+    $("#btn").on("click",function () {
+        $.post("new.php",{name:$("#username").val(),password:$("#password").val()},function (data) {
+            $("#result").text(data);
+        }).fail(function () {
+            alert("服务器有问题");
+        });
+        saveData();
+    });
+});
+
+//WebStorage存储数据
+function saveData() {
+    var data = new Object();  //创建新的object对象并将需要保存的value设置为其属性
+    data.name = document.getElementById("username").value;
+    data.password = document.getElementById("password").value;
+    var str = JSON.stringify(data);//将字obeject对象转化为json字符串
+    sessionStorage.setItem(data.name, str);
+    alert("数据已经保存");
+}
+
+
+//暂时未用...待完善
+function findData() {
+    var find = document.getElementById("find").value;
+    var str = sessionStorage.getItem(find);
+    var data = JSON.parse(str);//将取回的json字符串转化为object对象
+    var result = "姓名：" + data.name + "<br/>"
+    result += "邮箱：" + data.email + "<br/>"
+    result += "电话：" + data.tel + "<br/>"
+    result += "备注：" + data.memo + "<br/>"
+    document.getElementById("msg1").innerHTML=result;
+}
 
