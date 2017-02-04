@@ -103,3 +103,41 @@ function findData() {
     document.getElementById("msg1").innerHTML=result;
 }
 
+//jQuery ui功能
+//导航条搜索框自动提示功能
+$( function() {
+    var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+    ];
+    $( "#autoComplete" ).autocomplete({
+        source: availableTags//表示提示来源的数组不能加；
+    });
+} );
+//科比名言dialog效果
+$( function() {
+    $("#dialogBtn").on("click",function () {
+        $( "#dialog" ).dialog();
+    })
+} );
+
